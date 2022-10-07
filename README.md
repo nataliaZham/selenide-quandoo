@@ -7,6 +7,14 @@ This is a demo project which purpose is to demonstrate the usage of Selenide wra
 Project has a test class SignUpTest which contains the following tests:
 * negative test checking that sign up is not performed if the Terms and Conditions checkbox is not ticked.
 
+Project has a test class LoginTest which contains the following tests:
+* positive test checking successful login functionality
+
+Project has a test class RestaurantEnquiryTest which contains the following tests:
+* negative test which ensures that there is no ability to send enquiry without ticking Terms checkbox.
+
+Project has a test class End2EndTests which contains the following tests:
+* positive test checking edited user's name in the existing reservation
 ## Prerequisites Software/Tools
 
 1. Java Development Kit (Java 11)
