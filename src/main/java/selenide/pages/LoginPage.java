@@ -1,0 +1,28 @@
+package selenide.pages;
+
+import org.openqa.selenium.By;
+
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.page;
+
+/**
+ * Class LoginPage contains all login page locators and methods.
+ */
+public class LoginPage extends Page {
+
+    // locators
+    private static By emailField = By.xpath("//*[@data-qa='email-input']");
+    private static By passwordField = By.xpath("//*[@data-qa='password-input']");
+    private static By loginBtn = By.xpath("//*[@data-qa='login-btn']");
+
+    // methods
+    public void fillInValidCred() {
+        $(emailField).setValue(VALID_EMAIL);
+        $(passwordField).setValue(VALID_PASS);
+    }
+
+    public Homepage clickOnLoginBtnHP() {
+        $(loginBtn).click();
+        return page(Homepage.class);
+    }
+}
