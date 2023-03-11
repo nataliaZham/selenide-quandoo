@@ -32,4 +32,4 @@ Clone repository and perform the following command:
 
 ## Contributors
 
-Natalia Zhamsaranova zamsaranovanatala@gmail.com
+Natalia Zhamsaranova zhamsaranova.nata@gmail.com

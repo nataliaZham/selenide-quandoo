@@ -1,6 +1,6 @@
 package selenide.pages;
 
-import com.github.javafaker.Faker;
+
 import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;

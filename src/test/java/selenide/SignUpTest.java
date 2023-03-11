@@ -12,6 +12,7 @@ import static com.codeborne.selenide.Selenide.open;
  */
 public class SignUpTest {
 
+    //classes
     Homepage homepage;
     SignUpPage signUpPage;
 
@@ -20,15 +21,11 @@ public class SignUpTest {
      * Negative test which ensures that there is no ability to sign up without ticking Terms checkbox.
      */
     public void signUpWithoutTermsAndPrivacy() {
-        //open page
         homepage = open("https://www.quandoo.de/en", Homepage.class);
         homepage.accCookies();
         signUpPage = homepage.clickOnSignUpBtn();
-        //insert data to all fields
         signUpPage.fillInSignUpFields();
-        //Click on Create Account
         signUpPage.clickOnCreateAccountBtn();
-        // check that Create Account button exists
         signUpPage.createAccountBtnEl().should(Condition.visible);
     }
 }
